@@ -1,0 +1,139 @@
+*{ cursor: url('img/cursor.png') 4 4, auto;}
+
+body {
+    background-image:linear-gradient(#1e253c,#ed6452);
+    margin:0px;
+    
+}
+
+body >* {
+
+  font-family: "Bytesized", sans-serif;
+ 
+}
+
+.lieu {
+    font-size: 4em; 
+    color: #ed6452;
+}
+
+.vertical{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.stats {
+    color: #ffffff;
+    font-size: 2.4em;
+    display:flex;
+    flex-direction: row;
+
+    
+}
+
+.stats > div{
+    display:flex;
+    flex-direction: row;
+}
+
+.titre {
+    color: #fff;
+    font-size: 8em;
+    font-weight: bold;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.perso {
+    /*border: 4px solid #ed6452;*/
+    width: 10%;
+    height: auto;
+
+}
+
+.infos >*{
+    margin: 0px;
+}
+
+.infos {
+    display: flex;
+}
+
+
+
+.time {
+    color: #fff;
+    font-size: 6em;
+    font-weight: bold;
+    padding: 30px;
+  
+}
+
+.top-bar {
+  background-color:#ed6452;
+
+  height: 40px;
+  font-size: 0.5em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+   padding: 9px;
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.game-container {
+  position: relative;
+  height: 100%;
+  background: linear-gradient(180deg, #1e253c, #ed6452);
+  background-size: 300% 300%;
+  animation: animfond 6s ease-in-out infinite;
+}
+
+/* ====================== ANIMATION DU FOND ============================ */
+@keyframes animfond {
+  0% { background-position: 50% 0%; }
+  50% { background-position: 50% 30%; }
+  100% { background-position: 50% 0%; }
+}
+
+
+.particules {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  animation: float 8s linear infinite;
+}
+
+
+.particules:nth-child(1) { top: 20%; left: 10%; animation-delay: 0s; }
+.particules:nth-child(2) { top: 50%; left: 30%; animation-delay: 2s; }
+.particules:nth-child(3) { top: 70%; left: 60%; animation-delay: 4s; }
+.particules:nth-child(4) { top: 40%; left: 80%; animation-delay: 1s; }
+.particules:nth-child(5) { top: 10%; left: 50%; animation-delay: 3s; }
+
+@keyframes float {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-150px) scale(0.5);
+    opacity: 0;
+  }
+}
