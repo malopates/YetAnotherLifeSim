@@ -36,7 +36,10 @@ height: auto;
   margin: 0px;
 }
 
-
+.gauche-bas img {
+  width: 7%;
+  height: auto;
+}
 
 .titre {
     color: #fff;
@@ -118,11 +121,7 @@ html, body {
 }
 
 
-.particules:nth-child(1) { top: 20%; left: 10%; animation-delay: 0s; }
-.particules:nth-child(2) { top: 50%; left: 30%; animation-delay: 2s; }
-.particules:nth-child(3) { top: 70%; left: 60%; animation-delay: 4s; }
-.particules:nth-child(4) { top: 40%; left: 80%; animation-delay: 1s; }
-.particules:nth-child(5) { top: 10%; left: 50%; animation-delay: 3s; }
+
 
 @keyframes float {
   0% {

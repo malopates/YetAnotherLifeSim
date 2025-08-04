@@ -1,3 +1,6 @@
+
+
+
 const map = document.getElementById('map');
 
 function updateTime() {
@@ -38,3 +41,24 @@ function createBar(statId) {
 }
 
 ['mental', 'social', 'energie'].forEach(createBar);
+
+//merci à Léa pour cette fonction :)
+// github :saiyuudev
+function initParticles(particleCount = 5, maxAnimationDelay = 5) {
+    const particleContainer = document.getElementById('particles');
+    if (!particleContainer) return;
+
+    for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.classList.add('particules');
+        const positionTop = Math.random() * 100;
+        const positionLeft = Math.random() * 100;
+        const animationDelay = Math.random() * maxAnimationDelay;
+        particle.style.top = `${positionTop}%`;
+        particle.style.left = `${positionLeft}%`;
+        particle.style.animationDelay = `${animationDelay}s`;
+        particleContainer.appendChild(particle);
+    }
+}
+initParticles(20,5);
+
