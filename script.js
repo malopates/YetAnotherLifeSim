@@ -44,7 +44,7 @@ function createBar(statId) {
 
 //merci à Léa pour cette fonction :)
 // github :saiyuudev
-function initParticles(particleCount = 5, maxAnimationDelay = 5) {
+function initParticles(particleCount = 5) {
     const particleContainer = document.getElementById('particles');
     if (!particleContainer) return;
 
@@ -53,12 +53,12 @@ function initParticles(particleCount = 5, maxAnimationDelay = 5) {
         particle.classList.add('particules');
         const positionTop = Math.random() * 100;
         const positionLeft = Math.random() * 100;
-        const animationDelay = Math.random() * maxAnimationDelay;
+        const animationDelay = Math.random()*8;
         particle.style.top = `${positionTop}%`;
         particle.style.left = `${positionLeft}%`;
         particle.style.animationDelay = `${animationDelay}s`;
         particleContainer.appendChild(particle);
     }
 }
-initParticles(20,5);
+initParticles(25);
 
