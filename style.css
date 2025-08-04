@@ -12,31 +12,29 @@ body >* {
  
 }
 
+.gauche img{
+width: 90%;
+}
+
 .lieu {
     font-size: 4em; 
     color: #ed6452;
-}
-
-.vertical{
-    display: flex;
-    flex-direction: column;
-    
     
 }
 
-.stats {
-    color: #ffffff;
-    font-size: 2.4em;
-    display:flex;
-    flex-direction: row;
-
-    
+.gauche-haut{
+  display: flex;
 }
 
-.stats > div{
-    display:flex;
-    flex-direction: row;
+
+.stats > *{
+  color: #ffffff;
+  font-size: 2.4em;
+  display:grid;
+  margin: 0px;
 }
+
+
 
 .titre {
     color: #fff;
@@ -48,23 +46,20 @@ body >* {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
-
+    width: 100%;
 }
 
-.perso {
-    /*border: 4px solid #ed6452;*/
-    width: 10%;
-    height: auto;
-
-}
-
-.infos >*{
-    margin: 0px;
-}
-
-.infos {
+.caseperso {
     display: flex;
+    flex-direction: column;
+    background-color: #1e253c;
+    border: 20px solid #1e253c;
+    
+}
+
+.perso{
+    width: 100%;
+    padding-top: 20%;
 }
 
 
@@ -73,8 +68,8 @@ body >* {
     color: #fff;
     font-size: 6em;
     font-weight: bold;
-    padding: 30px;
-  
+    padding-left: 30px;
+    margin : 0px;
 }
 
 .top-bar {
@@ -100,7 +95,7 @@ html, body {
   height: 100%;
   background: linear-gradient(180deg, #1e253c, #ed6452);
   background-size: 300% 300%;
-  animation: animfond 6s ease-in-out infinite;
+  animation: animfond 3s ease-in-out infinite;
 }
 
 /* ====================== ANIMATION DU FOND ============================ */

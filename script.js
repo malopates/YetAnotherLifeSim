@@ -27,7 +27,6 @@ function createBar(statId) {
     const nbCarre = 5;
     // remplissage 
     const filledSquares = 1;
-
     for (let i = 0; i < nbCarre; i++) {
         const square = document.createElement('div');
         square.style.width = '30px';
@@ -35,7 +34,6 @@ function createBar(statId) {
         square.style.background = i < filledSquares ? '#ed6452' : '#fff'; // coloré ou vide
         barContainer.appendChild(square);
     }
-
     statElement.parentNode.insertBefore(barContainer, statElement.nextSibling);
 }
 
