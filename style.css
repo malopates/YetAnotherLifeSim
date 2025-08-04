@@ -14,6 +14,8 @@ body >* {
 
 .gauche img{
 width: 90%;
+max-width: 100%;
+height: auto;
 }
 
 .lieu {
@@ -87,7 +89,6 @@ width: 90%;
 html, body {
   height: 100%;
   margin: 0;
-  overflow: hidden;
 }
 
 .game-container {
@@ -96,6 +97,7 @@ html, body {
   background: linear-gradient(180deg, #1e253c, #ed6452);
   background-size: 300% 300%;
   animation: animfond 3s ease-in-out infinite;
+ 
 }
 
 /* ====================== ANIMATION DU FOND ============================ */
